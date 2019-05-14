@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,140 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alcool_ou_Gaolina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EXb-Ox-dNF">
+                                <rect key="frame" x="20" y="158" width="374" height="57.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bem-vindo! Vamos descobrir qual a melhor opção, álcool ou gasolina?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZV-iG-O22">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="57.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jxu-2h-xwE">
+                                <rect key="frame" x="20" y="44" width="374" height="106"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="c7v-4V-nkS">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="106"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="rvn-JS-Gd1">
+                                <rect key="frame" x="16" y="231.5" width="382" height="73"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cc8-Tp-DgN">
+                                        <rect key="frame" x="0.0" y="0.0" width="156" height="73"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ácool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrw-hG-YI5">
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="31.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rh9-Zk-RZb">
+                                                <rect key="frame" x="0.0" y="41.5" width="156" height="31.5"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IBN-u2-8Sq">
+                                        <rect key="frame" x="226" y="0.0" width="156" height="73"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gasolina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0a8-Zv-oTX">
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="31.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ppr-WM-7I0">
+                                                <rect key="frame" x="0.0" y="41.5" width="156" height="31.5"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="iuy-YG-8ej">
+                                <rect key="frame" x="32" y="312.5" width="350" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkA-mR-zmP">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Limpar"/>
+                                        <connections>
+                                            <action selector="limparAlcool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fDk-dp-Wjv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXu-Im-5v7">
+                                        <rect key="frame" x="230" y="0.0" width="120" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Limpar"/>
+                                        <connections>
+                                            <action selector="limparGasolina:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AYh-Mv-PwF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dXu-Im-5v7" secondAttribute="trailing" constant="32" id="7dQ-Pe-fes"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAW-O9-SO5">
+                                <rect key="frame" x="64" y="577.5" width="286" height="41"/>
+                                <color key="backgroundColor" red="0.21208940233122611" green="0.45662822275597437" blue="0.13191742586744273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="CALCULAR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCalcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQS-gx-82o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10196078431372549" green="0.78431372549019607" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jxu-2h-xwE" secondAttribute="trailing" constant="20" id="1Iy-Vx-6SE"/>
+                            <constraint firstItem="EXb-Ox-dNF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Jq-wH-hWs"/>
+                            <constraint firstItem="iuy-YG-8ej" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="9Tz-7c-zpM"/>
+                            <constraint firstItem="yAW-O9-SO5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="150" id="9gU-Db-QX2"/>
+                            <constraint firstAttribute="trailing" secondItem="EXb-Ox-dNF" secondAttribute="trailing" constant="20" id="Iwf-xe-kKf"/>
+                            <constraint firstItem="iuy-YG-8ej" firstAttribute="top" secondItem="rvn-JS-Gd1" secondAttribute="bottom" constant="8" id="OM5-VM-0i1"/>
+                            <constraint firstItem="Jxu-2h-xwE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OuN-fn-bgg"/>
+                            <constraint firstItem="rvn-JS-Gd1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="PjV-Gm-Gtt"/>
+                            <constraint firstItem="Jxu-2h-xwE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YWR-zz-Jvq"/>
+                            <constraint firstItem="EXb-Ox-dNF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dn6-P6-iAs"/>
+                            <constraint firstItem="rvn-JS-Gd1" firstAttribute="top" secondItem="EXb-Ox-dNF" secondAttribute="bottom" constant="16" id="f2y-Aa-dog"/>
+                            <constraint firstItem="yAW-O9-SO5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jMm-Ig-Kby"/>
+                            <constraint firstItem="EXb-Ox-dNF" firstAttribute="top" secondItem="Jxu-2h-xwE" secondAttribute="bottom" constant="8" id="k0o-tn-TsG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EXb-Ox-dNF" secondAttribute="trailing" constant="20" id="tVh-jv-vbj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rvn-JS-Gd1" secondAttribute="trailing" constant="16" id="uIJ-0y-FHr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iuy-YG-8ej" secondAttribute="trailing" constant="32" id="vYd-NU-CBT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yAW-O9-SO5" secondAttribute="trailing" constant="64" id="wGZ-ob-Vgs"/>
+                            <constraint firstItem="yAW-O9-SO5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="xGg-ty-LhS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="precoAlcool" destination="rh9-Zk-RZb" id="McK-j8-mg3"/>
+                        <outlet property="precoGasolina" destination="ppr-WM-7I0" id="V0H-78-0HL"/>
+                        <outlet property="texto" destination="ZZV-iG-O22" id="KHA-WG-ofu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="116.51785714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="407" height="106"/>
+    </resources>
 </document>
